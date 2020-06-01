@@ -1,15 +1,15 @@
 import React, { FC } from 'react';
 import ImageSlider from '../index';
+import IronMan1 from '../images/IronMan1.jpeg';
+import IronMan2 from '../images/IronMan2.jpeg';
+import IronMan3 from '../images/IronMan3.jpeg';
+import IronMan4 from '../images/IronMan4.jpeg';
 
 export const Wrapper: FC<{}> = () => {
   return (
-    <ImageSlider
-      list={[
-        'http://img5.mtime.cn/pi/2019/03/29/095741.81998477_1000X1000.jpg',
-        'http://img5.mtime.cn/pi/2019/03/29/095722.99339034_1000X1000.jpg',
-        'http://img5.mtime.cn/pi/2019/03/29/095742.52160670_1000X1000.jpg',
-      ]}
-    />
+    <div>
+      <ImageSlider list={[IronMan1, IronMan2, IronMan3, IronMan4]} />
+    </div>
   );
 };
 
